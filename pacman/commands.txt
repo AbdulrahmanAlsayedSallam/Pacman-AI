@@ -1,0 +1,5 @@
+    python pacman.py -l testClassic
+    python pacman.py -l mediumClassic
+    python autoTrain.py
+    python autoPlay.py
+    python pacman.py -p ReflexAgent -l mediumClassic --frameTime 0
