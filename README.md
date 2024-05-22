@@ -58,7 +58,7 @@ The optimal policy can be computed through an iterative search through all state
 However, the issue with the MDP structure is that there are often far too many states to build a lookup table with an optimal action given any state. Therefore, we instead need some way to take a description of our state and produce Q-values for actions. This is done through neural networks which act as a function approximator. Features about the state are generated that capture important properties of the state and represented as a vector. The neural network then learns to take this vector and map it to an appropriate Q-value. In this project we use linear approximations mathematically expressed below. This becomes an approximation of the Q-value
 
 <p align="center">
-  <img width="500" height="50" src="./images/q_function_approx.svg">
+  <img width="500" height="50" src=".pacman/images/q_learn.svg">
 </p>
 
 In order to update the weights, we take the target Q-value (or sample) and subtract the current predicted Q-value. The weights are then adjusted with alpha indicating the learning rate.
