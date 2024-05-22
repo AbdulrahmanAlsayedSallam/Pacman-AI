@@ -9,7 +9,7 @@ I built an AI-based Pacman using a reinforcement learning technique called appro
   Example of AI Pacman agent playing 
 </p>
 
-![](/images/pacman_ai.gif)
+![](pacman/images/pacman_ai.gif)
 
 ## Dataset
 
@@ -21,7 +21,7 @@ The Pacman framework was developed by John DeNero and Dan Klein who are Computer
 
 | testClassic map                                            | mediumClassic map                                               |
 | :--------------------------------------------------------: | :-------------------------------------------------------------: |
-| <img width="" height="400" src="./images/testClassic.png"> | <img width="423" height="287" src="./images/mediumClassic.png">  
+| <img width="" height="400" src="./pacman/images/testClassic.png"> | <img width="423" height="287" src=".pacman/images/mediumClassic.png">  
 
 </p> 
 
