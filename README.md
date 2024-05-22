@@ -21,7 +21,7 @@ The Pacman framework was developed by John DeNero and Dan Klein who are Computer
 
 | testClassic map                                            | mediumClassic map                                               |
 | :--------------------------------------------------------: | :-------------------------------------------------------------: |
-| <img width="" height="400" src="./pacman/images/testClassic.png"> | <img width="423" height="287" src=".pacman/images/mediumClassic.png">  
+| <img width="" height="400" src="./pacman/images/testClassic.png"> | <img width="423" height="287" src="./pacman/images/mediumClassic.png">  
 
 </p> 
 
