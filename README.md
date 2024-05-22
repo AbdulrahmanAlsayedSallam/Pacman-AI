@@ -13,8 +13,6 @@ I built an AI-based Pacman using a reinforcement learning technique called appro
 
 ## Dataset
 
-Pacman Game
-
 The Pacman framework was developed by John DeNero and Dan Klein who are Computer Science professors at UC Berkeley. The original project can be found [here](http://ai.berkeley.edu/project_overview.html). The project was built to help teach students foundational AI concepts such as informed state-space search, probabilistic inference, and reinforcement learning. The game comes with many different layouts, but this project only used the *testClassic* and *mediumClassic* layouts as seen in the images below. The framework handles the graphics and game logistics, allowing students to focus on building the intelligent agent that navigates the map. 
 
 <p align="center">
