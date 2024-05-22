@@ -100,7 +100,7 @@ File Description (main files only)
 
 ***
 
-Play a classic game of Pacman using the arrow keys to move
+Play a classic game of Pacman using the wasd keys to move
 
 ```sh
     python pacman.py -l testClassic
@@ -128,7 +128,7 @@ Copy *multiAgents.py* and *weights.csv* from the *testing* directory into the ma
     python autoPlay.py
 ```
 
-To observe a single game of Pacman run the command below
+To observe a single game of Pacman using ReflexAgent run the command below
 
 ```sh
 python pacman.py -p ReflexAgent -l mediumClassic --frameTime 0
