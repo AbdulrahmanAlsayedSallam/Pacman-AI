@@ -10,14 +10,6 @@ Pacman Game
 
 The Pacman framework was developed by John DeNero and Dan Klein who are Computer Science professors at UC Berkeley. The original project can be found [here](http://ai.berkeley.edu/project_overview.html). The project was built to help teach students foundational AI concepts such as informed state-space search, probabilistic inference, and reinforcement learning. The game comes with many different layouts, but this project only used the *testClassic* and *mediumClassic* layouts as seen in the images below. The framework handles the graphics and game logistics, allowing students to focus on building the intelligent agent that navigates the map. 
 
-<p align="center">
-
-| testClassic map                                            | mediumClassic map                                               |
-| :--------------------------------------------------------: | :-------------------------------------------------------------: |
-| <img width="" height="400" src="./images/testClassic.png"> | <img width="423" height="287" src="./images/mediumClassic.png">  
-
-</p> 
-
 ## Quick Reinforcement Learning Review
 
 Reinforcement learning is a machine learning paradigm where an intelligent agent takes actions in an environment in order to maximize its cumulative reward. This can be mathematically formulated through Markov Decision Processes (MDPs) where there are states, actions, and rewards.
