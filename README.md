@@ -52,7 +52,7 @@ The value or utility of a q-state is the expected utility starting out having ta
 The optimal policy can be computed through an iterative search through all states and actions using the Bellman Update. Reinforcement learning is then formally defined as trying to find the optimal policy but the model or the reward functions are unknown. This requires the agent to explore their environment and learn which states exist, the actions to get to them, and the reward received. This is called Q-learning. Each q-state is approximated through trial and error which eventually converges to the optimal policy. 
 
 <p align="center">
-  <img width="500" height="50" src="./images/q_learn.svg">
+  <img width="500" height="50" src="./pacman/images/q_learn.svg">
 </p>
 
 However, the issue with the MDP structure is that there are often far too many states to build a lookup table with an optimal action given any state. Therefore, we instead need some way to take a description of our state and produce Q-values for actions. This is done through neural networks which act as a function approximator. Features about the state are generated that capture important properties of the state and represented as a vector. The neural network then learns to take this vector and map it to an appropriate Q-value. In this project we use linear approximations mathematically expressed below. This becomes an approximation of the Q-value
