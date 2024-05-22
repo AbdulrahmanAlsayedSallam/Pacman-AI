@@ -64,7 +64,7 @@ However, the issue with the MDP structure is that there are often far too many s
 In order to update the weights, we take the target Q-value (or sample) and subtract the current predicted Q-value. The weights are then adjusted with alpha indicating the learning rate.
 
 <p align="center">
-  <img width="400" height="50" src="./images/q_learn_update.svg">
+  <img width="400" height="50" src="./pacman/images/q_learn_update.svg">
 </p>
 
 <p align="center">
