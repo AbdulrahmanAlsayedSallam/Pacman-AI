@@ -1,14 +1,29 @@
 # AI Pacman with Reinforcement Learning
+This work was done for Santa Clara University's Artificial Intelligence course taught by Professor Liu
 
 ## Introduction
 
 I built an AI-based Pacman using a reinforcement learning technique called approximate Q-learning. Using features that represented the Q-states, Pacman was successful in learning to play after ~200 training games. On the *mediumClassic* map with 2 ghosts, the Pacman agent had a win rate of 90%.
+
+<p align="center">
+  Example of AI Pacman agent playing 
+</p>
+
+![](/images/pacman_ai.gif)
 
 ## Dataset
 
 Pacman Game
 
 The Pacman framework was developed by John DeNero and Dan Klein who are Computer Science professors at UC Berkeley. The original project can be found [here](http://ai.berkeley.edu/project_overview.html). The project was built to help teach students foundational AI concepts such as informed state-space search, probabilistic inference, and reinforcement learning. The game comes with many different layouts, but this project only used the *testClassic* and *mediumClassic* layouts as seen in the images below. The framework handles the graphics and game logistics, allowing students to focus on building the intelligent agent that navigates the map. 
+
+<p align="center">
+
+| testClassic map                                            | mediumClassic map                                               |
+| :--------------------------------------------------------: | :-------------------------------------------------------------: |
+| <img width="" height="400" src="./images/testClassic.png"> | <img width="423" height="287" src="./images/mediumClassic.png">  
+
+</p> 
 
 ## Quick Reinforcement Learning Review
 
@@ -36,9 +51,29 @@ The value or utility of a q-state is the expected utility starting out having ta
 
 The optimal policy can be computed through an iterative search through all states and actions using the Bellman Update. Reinforcement learning is then formally defined as trying to find the optimal policy but the model or the reward functions are unknown. This requires the agent to explore their environment and learn which states exist, the actions to get to them, and the reward received. This is called Q-learning. Each q-state is approximated through trial and error which eventually converges to the optimal policy. 
 
+<p align="center">
+  <img width="500" height="50" src="./images/q_learn.svg">
+</p>
+
 However, the issue with the MDP structure is that there are often far too many states to build a lookup table with an optimal action given any state. Therefore, we instead need some way to take a description of our state and produce Q-values for actions. This is done through neural networks which act as a function approximator. Features about the state are generated that capture important properties of the state and represented as a vector. The neural network then learns to take this vector and map it to an appropriate Q-value. In this project we use linear approximations mathematically expressed below. This becomes an approximation of the Q-value
 
+<p align="center">
+  <img width="500" height="50" src="./images/q_function_approx.svg">
+</p>
+
 In order to update the weights, we take the target Q-value (or sample) and subtract the current predicted Q-value. The weights are then adjusted with alpha indicating the learning rate.
+
+<p align="center">
+  <img width="400" height="50" src="./images/q_learn_update.svg">
+</p>
+
+<p align="center">
+  <img width="400" height="50" src="./images/q_learn_update2.svg">
+</p>
+
+<p align="center">
+  <img width="400" height="50" src="./images/q_learn_update3.svg">
+</p>
 
 ## My Model
 
@@ -100,7 +135,7 @@ File Description (main files only)
 
 ***
 
-Play a classic game of Pacman using the wasd keys to move
+Play a classic game of Pacman using the arrow keys to move
 
 ```sh
     python pacman.py -l testClassic
@@ -128,7 +163,7 @@ Copy *multiAgents.py* and *weights.csv* from the *testing* directory into the ma
     python autoPlay.py
 ```
 
-To observe a single game of Pacman using ReflexAgent run the command below
+To observe a single game of Pacman run the command below
 
 ```sh
 python pacman.py -p ReflexAgent -l mediumClassic --frameTime 0
