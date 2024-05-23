@@ -129,6 +129,7 @@ File Description (main files only)
 * ghostAgents.py - Agents to control ghosts
 * keyboardAgetns.py - Keyboard interfaces to control Pacman
 * layout.py - Code for reading layout files and storing their contents
+* commands.txt - commands to enter into the cmd 
 
 ***
 
