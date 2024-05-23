@@ -1,5 +1,4 @@
 # AI Pacman with Reinforcement Learning
-This work was done for Santa Clara University's Artificial Intelligence course taught by Professor Liu
 
 ## Introduction
 
